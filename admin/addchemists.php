@@ -14,6 +14,11 @@ include 'header.php';
     <form class="col s12" action="insertchemist.php" method="POST">
 
     <div class="row">
+    <div class="input-field col s12">
+          <input  id="first_name" type="text" class="validate" name="Chemistname">
+          <label for="first_name">Chemistname</label>
+        </div>
+      
         <div class="input-field col s12">
           <input  id="first_name" type="text" class="validate" name="Address">
           <label for="first_name">Address</label>

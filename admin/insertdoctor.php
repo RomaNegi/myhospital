@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	echo $timing             = $_POST['timing'];
 	
 
-	$s = "INSERT INTO doctors(id, doctorname, address, contactno, specialists, timing) VALUES(NULL, '$doctor_name', '$Address', '$contact_no', '$Specialists', $timing')";
+	$s = "INSERT INTO doctors(id, doctorname, address, contactno, specialists, timing) VALUES(NULL, '$doctor_name', '$Address', '$contact_no', '$Specialists', '$timing')";
 
 		
 	$query = mysqli_query($conn, $s);
