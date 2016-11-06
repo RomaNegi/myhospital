@@ -2,6 +2,7 @@
 include 'header.php';
 ?>
 <div class="container">
+<h3 class="blue-text center"> BloodBanks </h3>
 	<div class="row">
 	<div class="col s12 m6">
 	

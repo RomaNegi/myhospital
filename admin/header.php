@@ -50,12 +50,11 @@ require_once "config.php";
 
   <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="logout
-  .php">Logout</a></li>
+  <li><a href="logout.php">Logout</a></li>
 </ul>
 <nav>
   <div class="nav-wrapper blue">
-    <a href="#!" class="brand-logo">MyHospital</a>
+    <a href="home.php" class="brand-logo">MyHospital</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="hospital.php">Hospital</a></li>
       <li><a href="doctor.php">Doctors</a></li>

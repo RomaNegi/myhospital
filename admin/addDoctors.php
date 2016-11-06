@@ -11,24 +11,24 @@ include 'header.php';
 
 
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" action="insertdoctor.php" method="POST">
 
     <div class="row">
-        <div class="input-field col s6">
-          <input  id="first_name" type="text" class="validate">
+        <div class="input-field col s12">
+          <input  id="first_name" type="text" class="validate" name="doctor_name">
           <label for="first_name">Doctor Name</label>
         </div>
       </div>
 
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+        <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate" name="Address">
           <label for="last_name">Address</label>
         </div>
       
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
+          <input id="password" type="password" class="validate" name="contact_no">
           <label for="password">Contact No</label>
         </div>
       </div>
@@ -36,7 +36,7 @@ include 'header.php';
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input type="text" class="validate" name="specialists">
           <label for="email">Specialists</label>
         </div>
       </div>
@@ -44,7 +44,7 @@ include 'header.php';
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input type="text" class="validate" name="timing">
           <label for="email">Timing</label>
         </div>
       </div>
