@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	if(!empty($result))
 	{
 
-		echo "Data Inserted Successfully.";
+		header("location: hospital.php");
 	}
 	else 
 	{

@@ -34,6 +34,7 @@ include 'header.php';
     </div>
     <div class="card-action center">
           <a  href="#">View</a>
+          <a  href="edit_hospital.php?id=<?php echo $row['id'];?>">Edit</a>
         </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4"><?php echo $row['hospitalname']; ?><i class="material-icons right">close</i></span>

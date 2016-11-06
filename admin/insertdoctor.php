@@ -4,11 +4,11 @@ include 'config.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	echo $doctor_name        = $_POST['doctor_name'];
-	echo $Address            = $_POST['Address'];
-	echo $contact_no         = $_POST['contact_no'];
-	echo $Specialists        = $_POST['specialists'];
-	echo $timing             = $_POST['timing'];
+	$doctor_name        = $_POST['doctor_name'];
+	$Address            = $_POST['Address'];
+	$contact_no         = $_POST['contact_no'];
+	$Specialists        = $_POST['specialists'];
+	$timing             = $_POST['timing'];
 	
 
 	$s = "INSERT INTO doctors(id, doctorname, address, contactno, specialists, timing) VALUES(NULL, '$doctor_name', '$Address', '$contact_no', '$Specialists', '$timing')";
@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	if(!empty($query))
 	{
 
-		echo "Data Inserted Successfully.";
+		header("location: doctor.php" );
 	}
 	else 
 	{

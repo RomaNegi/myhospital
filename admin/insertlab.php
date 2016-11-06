@@ -4,11 +4,11 @@ include 'config.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	echo "<br>".$Pathologyname      = $_POST['pathologyname'];
-	echo "<br>".$Address            = $_POST['Address'];
-	echo "<br>".$Timing             = $_POST['timing'];
+	$Pathologyname      = $_POST['pathologyname'];
+	$Address            = $_POST['Address'];
+	$Timing             = $_POST['timing'];
 	
-	$sql = "INSERT INTO pathologylabs(id, pathologyname, address, contactno) VALUES(NULL, '$Pathologyname', '$Address', '$Timing')";
+	$sql = "INSERT INTO pathologylabs(id, pathologyname, address, timing) VALUES(NULL, '$Pathologyname', '$Address', '$Timing')";
 
 		
 	$result = mysqli_query($conn, $sql);
@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	if(!empty($result))
 	{
 
-		echo "Data Inserted Successfully.";
+		header("location: pathologylabs.php");
 	}
 	else 
 	{

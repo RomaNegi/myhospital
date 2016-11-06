@@ -31,6 +31,7 @@ include 'header.php';
     </div>
     <div class="card-action center">
           <a href="#">View</a>
+          <a  href="edit_chemist.php?id=<?php echo $row['id'];?>">Edit</a>
         </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4"><?php echo $row['chemistname']; ?><i class="material-icons right">close</i></span>

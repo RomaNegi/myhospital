@@ -29,11 +29,12 @@ include 'header.php';
     </div>
     <div class="card-action center">
           <a href="#">View</a>
+          <a  href="edit_pathologylab.php?id=<?php echo $row['id'];?>">Edit</a>
         </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4"><?php echo $row['pathologyname']?>close</i></span>
       <p><?php echo $row['address']?></p>
-      <p><?php echo $row['contactno']?></p>
+      <p><?php echo $row['timing']?></p>
     </div>
   </div>
   </div>
