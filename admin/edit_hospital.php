@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 $hospital_id = @trim($_GET['Hospital']);
-if (empty($pranayam_id))
+if (empty($hospital_id))
 {
 	$error1 = "somthing went wrong";
 }
@@ -10,11 +10,13 @@ if (empty($pranayam_id))
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
-	$asan_id = $_GET['asan'];
-	$heading = $_POST['heading'];
-	$content = $_POST['content'];
-	$video = @$_POST['video'];
-	$qry = "UPDATE pranayam SET postheading='$heading', postcontent='$content', postvideo='$video' WHERE postid='$asan_id'";
+	$hospital_name      = $_POST['hospital_name'];
+    $Address            = $_POST['Address'];
+    $contact_no         = $_POST['contact_no'];
+    $list_of_doctors    = $_POST['list_of_doctors'];
+    $list_of_treatments = $_POST['list_of_treatments'];
+    $list_of_services   = $_POST['list_of_services'];
+    $qry = "UPDATE pranayam SET postheading='$heading', postcontent='$content', postvideo='$video' WHERE postid='$asan_id'";
 
 	$result = mysqli_query($conn, $qry);
 	if (!empty($result)) 

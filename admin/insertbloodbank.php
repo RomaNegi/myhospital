@@ -4,11 +4,11 @@ include 'config.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	    
-	echo "<br>".$Address            = $_POST['Address'];
-	echo "<br>".$Timing             = $_POST['timing'];
+	 $Bloodbank         =  $_POST['Bloodbank'];
+	$Address            = $_POST['Address'];
+ 	$Timing             = $_POST['timing'];
 	
-	$sql = "INSERT INTO bloodbank(id, address, timing) VALUES(NULL, '$Address', '$Timing')";
+	$sql = "INSERT INTO bloodbank(id, bloodbankname, address, timing) VALUES(NULL, '$Bloodbank', '$Address', '$Timing')";
 
 		
 	$result = mysqli_query($conn, $sql);
