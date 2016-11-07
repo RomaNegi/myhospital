@@ -2,7 +2,9 @@
 
 //api for hopistal list
 
-$conn = mysqli_connect('localhost:8889', 'root', 'root', 'myhospital');
+include '../admin/config.php';
+
+//$conn = mysqli_connect('localhost:8889', 'root', 'root', 'myhospital');
 
 
 $sql = "SELECT * FROM Hospital";
