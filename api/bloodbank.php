@@ -1,11 +1,11 @@
 <?php
 
-//api for hopistal list
+//api for bloodbank list
 
 $conn = mysqli_connect('localhost:8889', 'root', 'root', 'myhospital');
 
 
-$sql = "SELECT * FROM Hospital";
+$sql = "SELECT * FROM bloodbank";
 
 $result = mysqli_query($conn, $sql);
 
