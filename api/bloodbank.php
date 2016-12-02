@@ -5,21 +5,40 @@
 include '../admin/config.php';
 
 //$conn = mysqli_connect('localhost:8889', 'root', 'root', 'myhospital');
-
-
-$sql = "SELECT * FROM bloodbank";
-
-$result = mysqli_query($conn, $sql);
-
-$json_array = array();
-
-while($row = mysqli_fetch_assoc($result))
+if ($_GET['id'])
 {
-	$json_array[] = $row;
+	$id = $_GET['id'];
+	$sql = "SELECT * FROM bloodbank where id = $id";
+	$result = mysqli_query($conn, $sql);
+
+	$json_array = array();
+
+		while($row = mysqli_fetch_assoc($result))
+		{
+			$json_array[] = $row;
+
+		}
+
+	echo json_encode($json_array);
 
 }
+else
+{
+	$sql = "SELECT * FROM bloodbank";
 
+	$result = mysqli_query($conn, $sql);
+
+	$json_array = array();
+
+		while($row = mysqli_fetch_assoc($result))
+		{
+			$json_array[] = $row;
+
+		}
+
+	echo json_encode($json_array);
+}
 //print_r($json_array);
 
-echo json_encode($json_array);
+
 ?>
