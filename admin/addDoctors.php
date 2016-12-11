@@ -26,6 +26,12 @@ include 'header.php';
         </div>
       
 
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="text" type="text" class="validate" name="timing">
+          <label for="password">Contact No</label>
+        </div>
+      </div>
 
 
       <div class="row">
