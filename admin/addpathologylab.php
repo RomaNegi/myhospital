@@ -29,7 +29,7 @@ include 'header.php';
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate" name="timing">
+          <input id="text" type="password" class="validate" name="timing">
           <label for="password">Contact No</label>
         </div>
       </div>

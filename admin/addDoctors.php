@@ -26,12 +26,6 @@ include 'header.php';
         </div>
       
 
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate" name="contact_no">
-          <label for="password">Contact No</label>
-        </div>
-      </div>
 
 
       <div class="row">
