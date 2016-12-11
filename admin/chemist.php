@@ -30,7 +30,7 @@ include 'header.php';
       <p><a href="#">This is a link</a></p>
     </div>
     <div class="card-action center">
-          <a href="#">View</a>
+        
           <a  href="edit_chemist.php?id=<?php echo $row['id'];?>">Edit</a>
         </div>
     <div class="card-reveal">
